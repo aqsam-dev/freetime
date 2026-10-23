@@ -13,8 +13,8 @@ function App() {
   ]);
 
   return (
-    <div>
-      <h1>WoodCraft Forum</h1>
+    <div className="app">
+      <h1 className="app-title">My Blog</h1>
       <PostList posts={posts} />
     </div>
   );
