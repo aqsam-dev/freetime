@@ -1,0 +1,62 @@
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* ---------- Page container ---------- */
+.app {
+  max-width: 700px;       /* keeps content readable on big screens */
+  margin: 0 auto;         /* centers it horizontally */
+  padding: 40px 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- List ---------- */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;              /* space between cards */
+}
+
+/* ---------- Card ---------- */
+.post-card {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border-left: 5px solid #4f46e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.post-author {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.5rem;
+  }
+  .post-card {
+    padding: 16px;
+  }
+}
